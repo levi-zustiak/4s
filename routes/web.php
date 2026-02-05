@@ -13,6 +13,12 @@ Route::middleware([
     Route::get('dashboard', function () {
         return Inertia::render('dashboard');
     })->name('dashboard');
+    Route::get('game', function () {
+        return Inertia::render('game');
+    })->name('game');
+    Route::get('leaderboards', function () {
+        return Inertia::render('leaderboards');
+    })->name('leaderboards');
 });
 
 require __DIR__.'/settings.php';
